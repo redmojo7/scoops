@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body>
+    <header>
+      <h1>Ice Cream Distribution</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="{% url 'tubs' %}">All Tubs</a></li>
+        <li><a href="{% url 'stores' %}">All Stores</a></li>
+      </ul>
+    </nav>
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+    <footer>
+      &copy; Ice Cream Distribution, 2023
+    </footer>
+  </body>
+</html>
