@@ -2,7 +2,7 @@
 
 {% block content %}
   <h1>List of Tubs</h1>
-  <table>
+  <table class="tub-table">
     <thead>
       <tr>
         <th>Flavor</th>
@@ -19,7 +19,7 @@
           <td>{{ tub.size }}</td>
           <td>{% if tub.is_vegan %}Yes{% else %}No{% endif %}</td>
           <td>{% if tub.is_gluten_free %}Yes{% else %}No{% endif %}</td>
-          <td>{{ tub.store.name }}</td>
+          <td><a href="/stores/{{ tub.store.id }}">{{ tub.store.name }}</a></td>
         </tr>
       {% endfor %}
     </tbody>

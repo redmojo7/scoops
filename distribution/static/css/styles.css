@@ -1,0 +1,104 @@
+/* styles.css */
+
+/* set background color of the whole page */
+body {
+    background-color: #eee;
+}
+
+/* center the header and set font styles */
+header {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h1 {
+    color: #333;
+}
+
+/* style the navigation links */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+/* style the tub table */
+.tub-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tub-table th,
+.tub-table td {
+  text-align: left;
+  padding: 8px;
+}
+
+.tub-table th {
+  background-color: #333;
+  color: white;
+}
+
+.tub-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tub-table:hover {
+    background-color: #e6f7ff;
+}
+  
+
+
+/* style the list of stores */
+.store-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.store-list li {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.store-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+/* style the footer */
+footer {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 1em;
+}

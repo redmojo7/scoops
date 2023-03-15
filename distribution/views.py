@@ -6,7 +6,7 @@ from django.db.models import Sum
 
 
 def tubs_view(request):
-    tubs = Tub.objects.all()
+    tubs = Tub.objects.all().order_by('store__name')
     return render(request, 'distribution/tubs.html', {'tubs': tubs})
 
 
