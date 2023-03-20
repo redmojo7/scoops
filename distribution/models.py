@@ -22,14 +22,14 @@ and which store the tub is assigned to.
 class Tub(models.Model):
     # use tuple for flavors
     FLAVOR_CHOICES = [
-        ('BLB', 'Blueberry'),
-        ('VAN', 'Vanilla'),
-        ('CHO', 'Chocolate'),
-        ('STR', 'Strawberry'),
-        ('BAN', 'Banana'),
-        ('MNG', 'Mango')
+        ('Blueberry', 'Blueberry'),
+        ('Vanilla', 'Vanilla'),
+        ('Chocolate', 'Chocolate'),
+        ('Strawberry', 'Strawberry'),
+        ('Banana', 'Banana'),
+        ('Mango', 'Mango')
     ]
-    flavor = models.CharField(max_length=3, choices=FLAVOR_CHOICES)
+    flavor = models.CharField(max_length=50, choices=FLAVOR_CHOICES)
     size = models.DecimalField(max_digits=5, decimal_places=2)
     is_vegan = models.BooleanField()
     is_gluten_free = models.BooleanField()

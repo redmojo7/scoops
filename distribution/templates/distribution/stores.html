@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h1>Stores</h1>
+  <h1>All Stores</h1>
   <ul class="store-list">
     {% for store in stores %}
       <li><a href="{% url 'store' store.id %}">{{ store.name }}</a></li>
