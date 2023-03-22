@@ -8,7 +8,7 @@ and a contact email address for the store.
 '''
 class Store(models.Model):
     name = models.CharField(max_length=255, unique=True)
-    location = models.CharField(max_length=255)
+    location = models.CharField(max_length=500)
     email = models.EmailField()
 
     def __str__(self):
